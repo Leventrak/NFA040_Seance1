@@ -1,0 +1,83 @@
+````<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 2 - Alternative</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, td {
+            border: 1px solid black;
+        }
+        .content-section {
+            margin-bottom: 20px;
+        }
+        .inner-list {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        .sub-table td {
+            width: 50%;
+            border-right: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-section">
+        <p>Première partie :</p>
+        <table>
+            <tr>
+                <td>Un tableau</td>
+                <td>composé de</td>
+                <td>6 cases</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="content-section">
+        <p><i>Deuxième partie</i></p>
+        <p style="color: green;">Liste ordonnée avec sous-listes :</p>
+        <ol>
+            <li>Premier point
+                <ul class="inner-list">
+                    <li>Rubrique 1</li>
+                    <li>Rubrique 2</li>
+                </ul>
+            </li>
+            <li>Deuxième point</li>
+            <li>Troisième point
+                <ul class="inner-list">
+                    <li>Rubrique 1</li>
+                    <li>Rubrique 2</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="content-section">
+        <p>Troisième partie :</p>
+        <table>
+            <tr>
+                <td>Un autre tableau avec des lignes et des divisions</td>
+                <td>
+                    <div style="border-bottom: 1px solid black; height: 20px;"></div>
+                    <div style="border-bottom: 1px solid black; height: 20px;"></div>
+                    <div style="height: 20px;"></div>
+                </td>
+                <td>&nbsp;</td>
+                <td>
+                    <table class="sub-table">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+````
